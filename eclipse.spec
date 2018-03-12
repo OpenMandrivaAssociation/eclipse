@@ -39,7 +39,7 @@ Epoch:                  1
 Summary:        An open, extensible IDE
 Name:           %{?scl_prefix}eclipse
 Version:        %{eclipse_version}
-Release:        8.2
+Release:        8.3
 License:        EPL
 Group:          Development/Tools
 URL:            http://www.eclipse.org/
@@ -128,7 +128,6 @@ Patch27:        eclipse-workspace-chooser.patch
 
 BuildRequires: rsync
 BuildRequires: make, gcc
-BuildRequires: pkgconfig(gtk+-2.0)
 BuildRequires: pkgconfig(gtk+-3.0)
 BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: gcc-c++
@@ -141,8 +140,6 @@ BuildRequires: unzip
 BuildRequires: desktop-file-utils
 BuildRequires: java-1.8.0-openjdk-devel
 BuildRequires: pkgconfig(xt)
-BuildRequires: webkitgtk-devel
-BuildRequires: pkgconfig(webkitgtk-3.0)
 BuildRequires: pkgconfig(webkit2gtk-4.0)
 BuildRequires: geronimo-annotation >= 1.0-7
 BuildRequires: %{?scl_prefix}icu4j-eclipse >= 1:52.1
@@ -201,10 +198,8 @@ Summary:        SWT Library for GTK+
 Group:          Development/Tools
 Requires:       java >= 1:1.7.0
 Requires:       jpackage-utils
-Requires:       gtk+2.0
 Requires:       gtk+3.0
-Requires:       webkit1.0
-Requires:       webkit3.0
+Requires:       webkit2
 
 %description swt
 SWT Library for GTK+.
