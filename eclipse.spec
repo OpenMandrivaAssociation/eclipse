@@ -128,6 +128,7 @@ Patch27:        eclipse-workspace-chooser.patch
 
 BuildRequires: rsync
 BuildRequires: make, gcc
+BuildRequires: pkgconfig(gtk+-2.0)
 BuildRequires: pkgconfig(gtk+-3.0)
 BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: gcc-c++
@@ -198,6 +199,7 @@ Summary:        SWT Library for GTK+
 Group:          Development/Tools
 Requires:       java >= 1:1.7.0
 Requires:       jpackage-utils
+Requires:	gtk+2.0
 Requires:       gtk+3.0
 Requires:       webkit2
 
