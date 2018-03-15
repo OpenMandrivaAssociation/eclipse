@@ -343,6 +343,7 @@ tar --strip-components=1 -xf %{SOURCE1}
 %patch25
 %patch26
 %patch27 -p1
+%patch28
 
 #Disable as many things as possible to make the build faster. We care only for Eclipse.
 %pom_disable_module platform.sdk eclipse.platform.releng.tychoeclipsebuilder
