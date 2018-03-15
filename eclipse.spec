@@ -126,6 +126,9 @@ Patch26:        %{pkg_name}-feature-plugins-to-category-ius.patch
 # Make workspace selection dialog visible in the task manager of the OS
 Patch27:        eclipse-workspace-chooser.patch
 
+# Require hamcrest when using directly (cannot rely on junit reexporting it)
+Patch28:        eclipse-direct-hamcrest-use.patch
+
 BuildRequires: rsync
 BuildRequires: make, gcc
 BuildRequires: pkgconfig(gtk+-2.0)
