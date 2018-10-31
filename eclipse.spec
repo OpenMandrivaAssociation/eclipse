@@ -39,7 +39,7 @@ Epoch:                  1
 Summary:        An open, extensible IDE
 Name:           %{?scl_prefix}eclipse
 Version:        %{eclipse_version}
-Release:        8.3
+Release:        8.4
 License:        EPL
 Group:          Development/Tools
 URL:            http://www.eclipse.org/
